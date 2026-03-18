@@ -3,15 +3,15 @@ import java.util.Arrays;
 public class task14 {
     public static void main(String[] args) {
         int[] array1 = {1, 3, 2, 7, 4};
-        cycleSwap(array1);
+        Swapcycle(array1);
         System.out.println(Arrays.toString(array1));
 
         int[] array2 = {1, 3, 2, 7, 4};
-        cycleSwap(array2, 3);
+        Swapcycle(array2, 3);
         System.out.println(Arrays.toString(array2));
     }
 
-    public static void cycleSwap(int[] array) {
+    public static void Swapcycle(int[] array) {
         if (array == null || array.length <= 1) {
             return;
         }
@@ -23,7 +23,7 @@ public class task14 {
         array[0] = lastElement;
     }
 
-    public static void cycleSwap(int[] array, int shift) {
+    public static void Swapcycle(int[] array, int shift) {
         if (array == null || array.length <= 1 || shift <= 0 || shift == array.length) {
             return;
         }

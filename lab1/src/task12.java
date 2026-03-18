@@ -3,11 +3,11 @@ import java.util.Arrays;
 public class task12 {
     public static void main(String[] args) {
         int[] input = {1, -1, 0, 4, 6, 10, 15, 25};
-        boolean[] result = getSumCheckArray(input);
+        boolean[] result = getSumCheck(input);
         System.out.println(Arrays.toString(result));
     }
 
-    public static boolean[] getSumCheckArray(int[] array) {
+    public static boolean[] getSumCheck(int[] array) {
         boolean[] result = new boolean[array.length];
 
         result[0] = false;
